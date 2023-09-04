@@ -2,11 +2,12 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 //bone
-ctx.fillStyle = '#314aeb';
-ctx.strokeStyle = '#314aeb';
+ctx.fillStyle = 'white';
+ctx.strokeStyle = 'white';
 ctx.lineWidth = 2.5;
 ctx.beginPath();
 ctx.fillRect(50, 37.5, 25, 12.5);
@@ -35,17 +36,19 @@ ctx.beginPath();
 ctx.arc(69, 55, 1.5, 0, Math.PI * 2);
 ctx.fill();
 
-//camisa
-ctx.fillStyle = 'red';
-ctx.fillRect(50, 67.5, 25, 25);
-
 //braços
 ctx.fillStyle = '#fcde8b';
-ctx.fillRect(75, 67.5, 7.5, 22.5);
+ctx.fillRect(75, 67.5, 7.5, 27.5);
 ctx.fillRect(42.5, 67.5, 7.5, 27.5);
 
+//camisa
+ctx.fillStyle = '#6210b9';
+ctx.fillRect(50, 67.5, 25, 25);
+ctx.fillRect(75, 67.5, 7.5, 10);
+ctx.fillRect(42.5, 67.5, 7.5, 10);
+
 //shorts
-ctx.fillStyle = 'black';
+ctx.fillStyle = 'white';
 ctx.fillRect(50, 92.5, 25, 15);
 
 //pernas
@@ -61,14 +64,22 @@ ctx.fillRect(65, 122.5, 7.5, 7.5);
 
 //labirinto
 ctx.beginPath();
-ctx.strokeStyle = 'black';
+ctx.strokeStyle = 'red';
 ctx.lineWidth = 2.5;
 ctx.moveTo(90,20);
 ctx.lineTo(1700,20);
 ctx.lineTo(1700,700);
+
 ctx.moveTo(1700,850);
 ctx.lineTo(1700,900);
 ctx.lineTo(90,900);
-ctx.lineTo(90,170);
-ctx.lineTo(200,170);
+ctx.lineTo(90,150);
+ctx.lineTo(200,150);
+ctx.lineTo(200,430);
+ctx.lineTo(300,430);
+
+ctx.moveTo(300,20);
+ctx.lineTo(300,280);
+ctx.lineTo(400,280);
+
 ctx.stroke();
