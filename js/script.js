@@ -64,7 +64,7 @@ ctx.fillRect(65, 122.5, 7.5, 7.5);
 
 //labirinto
 ctx.beginPath();
-ctx.strokeStyle = 'red';
+ctx.strokeStyle = 'black';
 ctx.lineWidth = 2.5;
 ctx.moveTo(90,20);
 ctx.lineTo(1700,20);
@@ -77,9 +77,14 @@ ctx.lineTo(90,150);
 ctx.lineTo(200,150);
 ctx.lineTo(200,430);
 ctx.lineTo(300,430);
+ctx.lineTo(300,550);
+ctx.lineTo(190,550);
 
 ctx.moveTo(300,20);
 ctx.lineTo(300,280);
 ctx.lineTo(400,280);
+ctx.lineTo(400,700);
+ctx.lineTo(190,700);
+ctx.lineTo(190,750);
 
 ctx.stroke();
