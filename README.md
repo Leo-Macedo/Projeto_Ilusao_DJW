@@ -1,2 +1,3 @@
-# Projeto_Ilusao
-## Leonardo Macêdo Aurieni
+# Projeto_Ilusao_DJW
+## Leonardo Macêdo Aurieni<br>
+## Diagrama de classes
