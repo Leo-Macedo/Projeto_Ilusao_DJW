@@ -5,13 +5,12 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 //variaveis
+var w = 87, s = 83, d = 68, a = 65;
 var moverx = 50;
-document.addEventListener('keydown', function(event){
-    if (event.key === 'd') {
-        moverx += 10;
-    }
+var movery = 50;
+var velox = 10;
 
-});
+
 
 //bone
 ctx.fillStyle = 'white';
