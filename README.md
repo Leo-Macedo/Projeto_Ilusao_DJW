@@ -1,4 +1,4 @@
-# Projeto_Ilusao_DJW
+# Projeto Ilusao DJW
 ## Leonardo Macêdo Aurieni<br>
 ## Diagrama de classes
 <img src = "img/classe.jpg" ><br>
