@@ -27,8 +27,8 @@ ctx.fillStyle = '#fcde8b';
 ctx.fillRect(moverx , 50, 25, 17.5);
 
 //boca
-ctx.beginPath();
 ctx.strokeStyle = 'black';
+ctx.beginPath();
 ctx.moveTo(moverx + 5,62.5);
 ctx.quadraticCurveTo(moverx + 12.5,67.5,70,62.5);
 ctx.stroke();
@@ -38,7 +38,6 @@ ctx.fillStyle = 'black';
 ctx.beginPath();
 ctx.arc(moverx + 6, 55, 1.5, 0, Math.PI * 2);
 ctx.fill();
-
 ctx.beginPath();
 ctx.arc(moverx + 19, 55, 1.5, 0, Math.PI * 2);
 ctx.fill();
