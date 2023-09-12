@@ -11,85 +11,170 @@ var movery = 50;
 var velox = 10;
 
 
+function boneco(){
+    //bone
+    ctx.fillStyle = 'white';
+    ctx.strokeStyle = 'white';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    ctx.fillRect(moverx, movery - 10, 25, 10);
+    ctx.moveTo(moverx + 25,movery - 1);
+    ctx.lineTo(moverx + 40,movery - 1);
+    ctx.stroke();
 
-//bone
-ctx.fillStyle = 'white';
-ctx.strokeStyle = 'white';
-ctx.lineWidth = 2.5;
-ctx.beginPath();
-ctx.fillRect(moverx , 37.5, 25, 12.5);
-ctx.moveTo(moverx + 25,48.5);
-ctx.lineTo(moverx + 40,48.5);
-ctx.stroke();
+    //cabeca
+    ctx.fillStyle = '#fcde8b';
+    ctx.fillRect(moverx , movery, 25, 17.5);
 
-//cabeca
-ctx.fillStyle = '#fcde8b';
-ctx.fillRect(moverx , 50, 25, 17.5);
+    //boca
+    ctx.strokeStyle = 'black';
+    ctx.beginPath();
+    ctx.moveTo(moverx + 5,movery + 12);
+    ctx.quadraticCurveTo(moverx + 12.5,movery + 17,moverx + 20,movery + 12);
+    ctx.stroke();
 
-//boca
-ctx.strokeStyle = 'black';
-ctx.beginPath();
-ctx.moveTo(moverx + 5,62.5);
-ctx.quadraticCurveTo(moverx + 12.5,67.5,70,62.5);
-ctx.stroke();
+    //olhos
+    ctx.fillStyle = 'black';
+    ctx.beginPath();
+    ctx.arc(moverx + 6, movery + 5, 1.5, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(moverx + 19, movery +5, 1.5, 0, Math.PI * 2);
+    ctx.fill();
 
-//olhos
-ctx.fillStyle = 'black';
-ctx.beginPath();
-ctx.arc(moverx + 6, 55, 1.5, 0, Math.PI * 2);
-ctx.fill();
-ctx.beginPath();
-ctx.arc(moverx + 19, 55, 1.5, 0, Math.PI * 2);
-ctx.fill();
+    //braços
+    ctx.fillStyle = '#fcde8b';
+    ctx.fillRect(moverx + 25, movery + 17, 7.5, 22);
+    ctx.fillRect(moverx - 7.5, movery + 17, 7.5, 22);
 
-//braços
-ctx.fillStyle = '#fcde8b';
-ctx.fillRect(moverx + 25, 67.5, 7.5, 27.5);
-ctx.fillRect(moverx - 7.5, 67.5, 7.5, 27.5);
+    //camisa
+    ctx.fillStyle = '#6210b9';
+    ctx.fillRect(moverx , movery +17, 25, 20);
+    ctx.fillRect(moverx + 25, movery +17, 7.5, 5);
+    ctx.fillRect(moverx - 7.5, movery +17, 7.5, 5);
 
-//camisa
-ctx.fillStyle = '#6210b9';
-ctx.fillRect(moverx , 67.5, 25, 25);
-ctx.fillRect(moverx + 25, 67.5, 7.5, 10);
-ctx.fillRect(moverx - 7.5, 67.5, 7.5, 10);
+    //shorts
+    ctx.fillStyle = 'white';
+    ctx.fillRect(moverx, movery +37, 25, 10);
 
-//shorts
-ctx.fillStyle = 'white';
-ctx.fillRect(moverx, 92.5, 25, 15);
+    //pernas
+    ctx.fillStyle = '#fcde8b';
+    ctx.fillRect(moverx + 2.5, movery +47, 7.5, 15);
+    ctx.fillRect(moverx + 15, movery +47, 7.5, 15);
 
-//pernas
-ctx.fillStyle = '#fcde8b';
-ctx.fillRect(moverx + 2.5, 107.5, 7.5, 17.5);
-ctx.fillRect(moverx + 15, 107.5, 7.5, 17.5);
+    //sapato
+    ctx.fillStyle = '#cccccc';
+    ctx.fillRect(moverx + 2.5, movery +60, 7.5, 5);
+    ctx.fillRect(moverx + 15, movery +60, 7.5, 5);
+}
 
-//sapato
-ctx.fillStyle = '#cccccc';
-ctx.fillRect(moverx + 2.5, 122.5, 7.5, 7.5);
-ctx.fillRect(moverx + 15, 122.5, 7.5, 7.5);
+function labirinto(){
+    //labirinto
+    ctx.beginPath();
+    ctx.strokeStyle = 'white';
+    ctx.lineWidth = 4;
+    ctx.moveTo(90,20);
+    ctx.lineTo(1300,20);
+    ctx.lineTo(1300,700);
 
-//labirinto
-ctx.beginPath();
-ctx.strokeStyle = 'black';
-ctx.lineWidth = 2.5;
-ctx.moveTo(90,20);
-ctx.lineTo(1700,20);
-ctx.lineTo(1700,700);
+    ctx.moveTo(1300,850);
+    ctx.lineTo(1300,900);
+    ctx.lineTo(90,900);
+    ctx.lineTo(90,150);
+    ctx.lineTo(150,150);
+    ctx.lineTo(150,380);
+    ctx.lineTo(300,380);
+    ctx.lineTo(300,550);
+    ctx.lineTo(150,550);
 
-ctx.moveTo(1700,850);
-ctx.lineTo(1700,900);
-ctx.lineTo(90,900);
-ctx.lineTo(90,150);
-ctx.lineTo(200,150);
-ctx.lineTo(200,430);
-ctx.lineTo(300,430);
-ctx.lineTo(300,550);
-ctx.lineTo(190,550);
 
-ctx.moveTo(300,20);
-ctx.lineTo(300,280);
-ctx.lineTo(400,280);
-ctx.lineTo(400,700);
-ctx.lineTo(190,700);
-ctx.lineTo(190,750);
+    ctx.moveTo(300,460);
+    ctx.lineTo(150,460);
 
-ctx.stroke();
+    ctx.moveTo(230,20);
+    ctx.lineTo(230,280);
+    ctx.lineTo(380,280);
+    ctx.lineTo(380,650);
+    ctx.lineTo(190,650);
+    ctx.lineTo(190,750);
+    ctx.lineTo(400,750);
+
+
+
+    ctx.moveTo(480,350);
+    ctx.lineTo(480,120);
+
+    ctx.moveTo(130,600);
+    ctx.lineTo(90,600);
+
+    ctx.moveTo(130,800);
+    ctx.lineTo(90,800);
+
+    ctx.moveTo(480,170);
+    ctx.lineTo(400,170);
+
+    ctx.moveTo(330,20);
+    ctx.lineTo(330,90);
+
+    ctx.moveTo(600,250);
+    ctx.lineTo(600,150);
+    ctx.lineTo(480,150);
+
+    ctx.moveTo(600,650);
+    ctx.lineTo(480,650);
+    
+    ctx.moveTo(900,550);
+    ctx.lineTo(700,550);
+    ctx.lineTo(700,250);
+
+    ctx.moveTo(480,900);
+    ctx.lineTo(480,850);
+    ctx.lineTo(800,850);
+    ctx.lineTo(800,750);
+    ctx.lineTo(700,750);
+    ctx.lineTo(700,650);
+    ctx.lineTo(900,650);
+
+
+    ctx.moveTo(480,500);
+    ctx.lineTo(480,750);
+    ctx.lineTo(600,750);
+    ctx.lineTo(600,400);
+
+
+    ctx.moveTo(200,900);
+    ctx.lineTo(200,850);
+    ctx.lineTo(400,850);
+
+    ctx.stroke();
+}
+
+
+function animacao(){
+    ctx.clearRect(0,0,1920,1080);
+    boneco();
+    labirinto();
+
+    requestAnimationFrame(animacao);
+}
+
+document.addEventListener('keydown', function(event){
+    boneco();
+    labirinto();
+    if(event.key === 'd' || event.key === 'D'){
+        moverx += 10;
+    }
+    if(event.key === 'a' || event.key === 'A'){
+        moverx -= 10;
+    }
+    if(event.key === 'w' || event.key === 'W'){
+        movery -= 10;
+    }
+    if(event.key === 's' || event.key === 'S'){
+        movery += 10;
+    }
+});
+
+boneco();
+labirinto();
+animacao();
