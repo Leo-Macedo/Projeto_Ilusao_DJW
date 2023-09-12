@@ -11,7 +11,8 @@ var movery = 50;
 var velox = 10;
 
 
-function boneco(){
+
+  function boneco(){
     //bone
     ctx.fillStyle = 'white';
     ctx.strokeStyle = 'white';
@@ -72,21 +73,23 @@ function labirinto(){
     //labirinto
     ctx.beginPath();
     ctx.strokeStyle = 'white';
-    ctx.lineWidth = 4;
+    ctx.lineWidth = 6;
+   //bordas
     ctx.moveTo(90,20);
-    ctx.lineTo(1300,20);
-    ctx.lineTo(1300,700);
+    ctx.lineTo(1400,20);
+    ctx.lineTo(1400,700);
 
-    ctx.moveTo(1300,850);
-    ctx.lineTo(1300,900);
-    ctx.lineTo(90,900);
+    ctx.moveTo(1400,850);
+    ctx.lineTo(1400,950);
+    ctx.lineTo(90,950);
     ctx.lineTo(90,150);
+
+    //esquerda
     ctx.lineTo(150,150);
     ctx.lineTo(150,380);
     ctx.lineTo(300,380);
     ctx.lineTo(300,550);
     ctx.lineTo(150,550);
-
 
     ctx.moveTo(300,460);
     ctx.lineTo(150,460);
@@ -95,65 +98,102 @@ function labirinto(){
     ctx.lineTo(230,280);
     ctx.lineTo(380,280);
     ctx.lineTo(380,650);
-    ctx.lineTo(190,650);
-    ctx.lineTo(190,750);
+    ctx.lineTo(160,650);
+    ctx.lineTo(160,750);
     ctx.lineTo(400,750);
 
-
+    ctx.moveTo(200,950);
+    ctx.lineTo(200,850);
+    ctx.lineTo(400,850);
 
     ctx.moveTo(480,350);
     ctx.lineTo(480,120);
-
-    ctx.moveTo(130,600);
-    ctx.lineTo(90,600);
-
-    ctx.moveTo(130,800);
-    ctx.lineTo(90,800);
-
+  
     ctx.moveTo(480,170);
     ctx.lineTo(400,170);
 
     ctx.moveTo(330,20);
     ctx.lineTo(330,90);
 
+    //meio
     ctx.moveTo(600,250);
     ctx.lineTo(600,150);
     ctx.lineTo(480,150);
 
-    ctx.moveTo(600,650);
-    ctx.lineTo(480,650);
+    ctx.moveTo(600,500);
+    ctx.lineTo(700,500);
+    ctx.moveTo(1300,150);
+    ctx.lineTo(1400,150);
+
+    ctx.moveTo(600,600);
+    ctx.lineTo(480,600);
     
-    ctx.moveTo(900,550);
-    ctx.lineTo(700,550);
-    ctx.lineTo(700,250);
+    ctx.moveTo(600,150);
+    ctx.lineTo(600,120);
 
-    ctx.moveTo(480,900);
-    ctx.lineTo(480,850);
-    ctx.lineTo(800,850);
-    ctx.lineTo(800,750);
-    ctx.lineTo(700,750);
-    ctx.lineTo(700,650);
-    ctx.lineTo(900,650);
-
+    ctx.moveTo(700,250);
+    ctx.lineTo(800,250);
+    ctx.lineTo(800,450);
 
     ctx.moveTo(480,500);
     ctx.lineTo(480,750);
     ctx.lineTo(600,750);
     ctx.lineTo(600,400);
 
+    //direita
+    ctx.moveTo(480,950);
+    ctx.lineTo(480,850);
+    ctx.lineTo(800,850);
+    ctx.lineTo(800,750);
+    ctx.lineTo(700,750);
+    ctx.lineTo(700,650);
+    ctx.lineTo(900,650);
+    ctx.lineTo(900,650);
+    ctx.lineTo(900,850);
 
-    ctx.moveTo(200,900);
-    ctx.lineTo(200,850);
-    ctx.lineTo(400,850);
+    ctx.moveTo(700,250);
+    ctx.lineTo(700,550);
+    ctx.lineTo(900,550);
+    ctx.lineTo(1000,550);
+    ctx.lineTo(1000,850);
+    ctx.lineTo(1400,850);
 
+    ctx.moveTo(1000,250);
+    ctx.lineTo(900,250);
+    ctx.lineTo(900,450);
+    ctx.lineTo(1200,450);
+    ctx.lineTo(1200, 850);
+
+    ctx.moveTo(1000,250);
+    ctx.lineTo(1200,250);
+    ctx.lineTo(1200,350);
+    ctx.lineTo(1000,350);
+
+    ctx.moveTo(1000,550);
+    ctx.lineTo(1100,550);
+    ctx.lineTo(1100,750);
+
+    ctx.moveTo(600,120);
+    ctx.lineTo(1300,120);
+    ctx.lineTo(1300,720);
     ctx.stroke();
 }
+//manto do timão
+function manto(){
+    var imagem=new Image();
+      imagem.onload=function(){
+      ctx.drawImage(this, 1450,670, 200, 200);
+      }
+      imagem.src = "img/timao.png"; 
+    }
+
 
 
 function animacao(){
-    ctx.clearRect(0,0,1920,1080);
+    ctx.clearRect(0,0,1400,2000);
     boneco();
     labirinto();
+    manto();
 
     requestAnimationFrame(animacao);
 }
@@ -177,4 +217,7 @@ document.addEventListener('keydown', function(event){
 
 boneco();
 labirinto();
+manto();
 animacao();
+manto();
+
