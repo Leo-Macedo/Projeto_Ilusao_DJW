@@ -2,8 +2,10 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
+//deixar canvas na tela toda
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+
 //variaveis
 var w = 87, s = 83, d = 68, a = 65;
 var moverx = 50;
