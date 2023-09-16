@@ -1,5 +1,31 @@
 # Projeto Ilusao DJW
 ## Leonardo Macêdo Aurieni<br>
+# Jogo: O labirinto da vida
+Esse jogo é uma continuação do jogo de LP. Onde o jogador saiu da prisão e agora tem que atravessar o labirinto para pegar o Manto do Timão.<br>
+As cores do labirinto foi escolhida por conta das cores do Timão, preto e branco.
+<img src="img/printjogo.jpg"><br>
+# HTML
+Fiz uma estrutura simples de HTML e adicionei um canvas com id "canvas"
+<img src = "img/printhtml.jpg"><br>
+# CSS
+Troquei sua cor de fundo para preto.
+<img src = "img/css.jpg"><br>
+# JavaScript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Diagrama de classes
 <img src = "img/classe.jpg" ><br>
 <h3> Descrição </h3>
