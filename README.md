@@ -4,13 +4,33 @@
 Esse jogo é uma continuação do jogo de LP. Onde o jogador saiu da prisão e agora tem que atravessar o labirinto para pegar o Manto do Timão.<br>
 As cores do labirinto foi escolhida por conta das cores do Timão, preto e branco.
 <img src="img/printjogo.jpg"><br>
+## Como Jogar?
+<img src="img/jogar.png"><br>
 # HTML
 Fiz uma estrutura simples de HTML e adicionei um canvas com id "canvas"
 <img src = "img/printhtml.jpg"><br>
 # CSS
-Troquei sua cor de fundo para preto.
+Troquei sua cor de fundo para preto.<br>
 <img src = "img/css.jpg"><br>
 # JavaScript
+Comecei inicializando o canvas, depois configurei para ele ficar na tela toda.<br>
+<img src = "img/js1.jpg"><br>
+## Personagem
+O personagem eu fiz com retângulos, círculos, retas e curva.<br>
+Adicionei uma função 'boneco' nele que irei explicar.<br>
+<img src = "img/js2.png"><br>
+## Labirinto
+Fiz o labirinto apenas com retas e mudei as linhas para branco.<br>
+Adiciona uma função 'labirinto' nele que irei explicar.<br>
+<img src = "img/lab.jpg"><br>
+<img src = "img/js3.png"><br>
+## Manto do Timão
+Coloquei o Manto do Timão em forma de imagem.<br>
+Adiciona uma função 'manto' nele que irei explicar.<br>
+<img src = "img/js4.png"><br>
+
+# Script de movimentação
+
 
 
 
