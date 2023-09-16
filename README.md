@@ -11,5 +11,5 @@ O Labirinto tem relação de herança com Reta para desenhar suas paredes.<br>
 <img src = "img/uso.jpg" ><br>
 <H3>Documentação</H3>
 <img src = "img/documentacao.jpg" ><br>
-<H2>Documentação</H2><br>
+<H2>Diagrama de atividade (finalizar o labirinto)</H2>
 <img src = "img/atividade.jpg" >
