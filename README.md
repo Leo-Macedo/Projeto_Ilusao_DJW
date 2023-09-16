@@ -37,8 +37,11 @@ Lembra das funções que eu criei no labirinto e personagem? Elas servirão na f
 https://github.com/Leo-Macedo/Projeto_Ilusao_DJW/assets/127630556/5e37ee3f-e85b-419a-bf7b-67efcfec6ad1
 
 <br>
+
 # Diagramas
+
 ## Diagrama de classes
+
 <img src = "img/classe.jpg" ><br>
 <h3> Descrição </h3>
 Esse é um Diagrama de Classes do Jogo do Labirinto. Que contêm as classes: Desenhos; Curva; Quadrado; Reta; Circulo; Personagem e Labirinto.<br>
