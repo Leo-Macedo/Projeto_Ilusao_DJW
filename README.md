@@ -7,7 +7,7 @@ As cores do labirinto foi escolhida por conta das cores do Timão, preto e branc
 ## Como Jogar?
 <img src="img/jogar.png"><br>
 # HTML
-Fiz uma estrutura simples de HTML e adicionei um canvas com id "canvas"
+Fiz uma estrutura simples de HTML e adicionei um canvas com id "canvas".
 <img src = "img/printhtml.jpg"><br>
 # CSS
 Troquei sua cor de fundo para preto.<br>
@@ -26,10 +26,14 @@ Adiciona uma função 'labirinto' nele que irei explicar.<br>
 <img src = "img/js3.png"><br>
 ## Manto do Timão
 Coloquei o Manto do Timão em forma de imagem.<br>
-Adiciona uma função 'manto' nele que irei explicar.<br>
 <img src = "img/js4.png"><br>
 
 # Script de movimentação
+Adicionei duas variáveis, uma para posição 'x' e outra para posição 'y'. Troquei as posições 'x' e 'y' dos desenhos do boneco pelas variáveis.<br>
+Para movimentar o boneco eu usei apenas a função 'if', com as condições de apertar a tecla, que quando pressionada irá aumentar ou dimininuir '10' nas variáveis.<br>
+Lembra das funções que eu criei no labirinto e personagem? Elas servirão na função 'animacao', onde quando acionada ela limpará toda a tela. Mas com as funções 'labirinto' e 'boneco' ela não limpará eles.<br>
+<img src = "img/js5.png"><br>
+# Jogo Funcionando
 
 
 
