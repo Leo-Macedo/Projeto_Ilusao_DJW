@@ -1,6 +1,10 @@
 # Projeto Ilusao DJW
 ## Leonardo Macêdo Aurieni<br>
 # Jogo: O labirinto da vida
+## Música: Manto do Timão - Mc Hariel, Mc Ryan SP e Mc Kevin
+A música tem o mesmo conceito de Ilusão que conta a histórias dos meninos de periferia (que nesse caso os Mc's contam as histórias de vida deles).<br>
+No desenrolar da música, eles contam que venceram na vida, vindo de baixo, através do funk.<br>
+# Descrição do Jogo
 Esse jogo é uma continuação do jogo de LP. Onde o jogador saiu da prisão e agora tem que atravessar o labirinto para pegar o Manto do Timão.<br>
 As cores do labirinto foi escolhida por conta das cores do Timão, preto e branco.
 <img src="img/printjogo.jpg"><br>
@@ -52,5 +56,3 @@ O Labirinto tem relação de herança com Reta para desenhar suas paredes.<br>
 <img src = "img/uso.jpg" ><br>
 <H3>Documentação</H3>
 <img src = "img/documentacao.jpg" ><br>
-<H2>Diagrama de atividade (finalizar o labirinto)</H2>
-<img src = "img/atividade.jpg" >
