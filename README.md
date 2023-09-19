@@ -38,7 +38,7 @@ Para movimentar o boneco eu usei apenas a função 'if', com as condições de a
 Lembra das funções que eu criei no labirinto e personagem? Elas servirão na função 'animacao', onde quando acionada ela limpará toda a tela. Mas com as funções 'labirinto' e 'boneco' ela não limpará eles.<br>
 <img src = "img/js5.png"><br>
 # Jogo Funcionando<br>
-https://github.com/Leo-Macedo/Projeto_Ilusao_DJW/assets/127630556/5e37ee3f-e85b-419a-bf7b-67efcfec6ad1
+https://github.com/Leo-Macedo/Projeto_Ilusao_DJW/assets/127630556/3e86ba0d-be7a-4bc8-b049-de03f9d5b0f4
 
 <br>
 
